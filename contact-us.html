@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Contact Us</title>
+        <script type="text/javascript"> 
+            $(function(){
+                $("#navigation").load("nav.html")
+                });
+        </script>    
+        <style>
+            html, body{
+                background-color: #fdfbe4;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="navigation" class= "sticky-top"></div>
+        <div class="row justify-content-center" style="padding: 5%;">
+            <div class="container col-lg-5 " style="padding: 3%;">
+                <form>
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nameInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="messageInput" class="form-label">Message</label>
+                        <textarea class="form-control" id="messageInput" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="background-color: #8c001b; border: none;">Submit</button>
+                </form>
+            </div>
+            <div class="col-lg-7" style="padding: 3%;">
+                <img src="Materials/628801748.jpg" class = "rounded img-fluid" alt="Smiling Child">
+            </div>
+            
+        </div>
+
+        <div class="container" style="padding: 2%;">
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-outline" style="border-color: #8c001b; color: #8c001b;" href="mailto:copts4uganda@gmail.com"> Send us a mail!</a>
+                <button class="btn btn-outline" style="border-color: #8c001b; color: #8c001b;" href="mailto:frraphaelreda@gmail.com"> Send us a mail!</a>
+            </div>
+
+        </div>
+
+        <div class="container-fluid" style="background-color: #8c001b; padding: 2%;">
+            <div class="text-center" style="padding-bottom: 1%;">
+                <img src="Materials/marker_50px.png" alt="">
+            </div>
+            <div class = "text-center" style="color: #fdfbe4;">
+                <h5>Virgin St. Mary and St. Mark the Apostle Coptic Orthodox Church</h5>
+                <h5>Plot 1805 Najjera 1 Area Bulabira 2 Road, Kampala - Uganda</h5>
+            </div>
+            
+        </div>
+        
+        <div> 
+            <div class="gmap_canvas">
+                <iframe width="100%" height="260" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1024&amp;height=260&amp;hl=en&amp;q=coptic orthodox church, kampala uganda&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+            <style>.mapouter{position:relative;text-align:right;width:100%;height:260px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:260px;}</style>
+        </div>
+            
+    </body>
+</html>
