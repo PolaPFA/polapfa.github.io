@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+		<link rel="stylesheet" href="navbar_css.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script>
+          $(document).ready(function(){
+            $("#burgerBtn").click(function(){
+              $("#burgerBtn").css('display','none');
+              $("#closeBtn").css('display','block');
+              $("#hambUL").css('display','inline');
+              // $("#hambMenu").css('display', 'block');
+              $(".hambMenu").addClass('showMenu');
+              $(".navLeft").css('display', 'none');
+            });
+            $("#closeBtn").click(function(){
+              $("#burgerBtn").css('display','block');
+              $("#closeBtn").css('display','none');
+              $("#hambUL").css('display','none');
+              // $("#hambMenu").css('display', 'none');
+              $(".hambMenu").removeClass('showMenu');
+              $(".navLeft").css('display', 'block');
+            });
+          });
+        </script>
+        
+        <div class="navLeft">
+          <a href="#"><img src="Materials/churchLogo_70px.png" style="width: 50px; height: 50px;"></a>
+        </div>
+        <div class="navRight">
+          <button id="burgerBtn"><img src="Materials/burgerMenuRed_70px.png" style="width: 35px; height: 35px;"></button>
+          <button id="closeBtn"><img src="Materials/closeBtnYellow.png"></button>
+        </div>
+        <div class="hambMenu">
+          <img src="Materials/solidLogo_large.png" id="churchLogo">
+          <ul id="hambUL">
+            <li><a href="#" >home</a></li>
+            <li><a href="#" >about us</a></li>
+            <li><a href="#" >our faith</a></li>
+            <li><a href="#" >donate</a></li>
+            <li><a href="#" >contact us</a></li>
+          </ul> 
+          <img src="Materials/WJWC.png" id="wjwcLogo">
+        </div>
+        
+    </body>
+</html>

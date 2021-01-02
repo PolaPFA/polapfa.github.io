@@ -1,0 +1,4 @@
+Colors:
+Primary		#fdfbe4
+Secondary	#dbb209
+Accent 		#8c001b

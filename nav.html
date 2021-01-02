@@ -1,0 +1,116 @@
+<nav>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+	<script>
+	  $(document).ready(function(){
+		$("#burgerBtn").click(function(){
+		  $("#burgerBtn").css('display','none');
+		  $("#closeBtn").css('display','block');
+		  $("#hambUL").css('display','block');
+		  $(".hambMenu").addClass('showMenu');
+		  $(".navLeft").css('display', 'none');
+		});
+		$("#closeBtn").click(function(){
+		  $("#burgerBtn").css('display','block');
+		  $("#closeBtn").css('display','none');
+		  $("#hambUL").css('display','none');
+		  $(".hambMenu").removeClass('showMenu');
+		  $(".navLeft").css('display', 'block');
+		});
+	  });
+	</script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+		.navLeft{
+			float: left;
+			left: 0;
+			margin-left: 5%;
+			margin-top: 1%;
+		}
+		.navRight{
+			float: right;
+			right: 0;
+			margin-right: 5%;
+			margin-top: 1%;
+		}
+		#burgerBtn{
+			border-radius: 50%;
+			background-color: #fdfbe4;
+			border: none;
+			width: 50px;
+			height: 50px;
+		}
+		#closeBtn{
+			display: none;
+			border: none;
+			width: 50px;
+			height: 50px;
+			background: none;
+		}
+		.hambMenu{
+			display: none;
+			position: block;
+			background: #8c001b;
+			/* padding: 2em; */
+			width: 0%;
+			height: 0%;
+		}
+		.showMenu{
+			display: block;
+			left: 0;
+			top: 0;
+			width: calc(100vw);
+			height: calc(100vh);
+		}
+		#hambUL{
+			font-family: 'Alfa Slab One', cursive;
+			font-size: 50px;
+			list-style-type: none;
+			padding-top: 10%;
+			padding-left: 20%;
+			position: fixed;
+			display: none;
+		}
+		#hambUL a{
+			display: inline;
+			text-decoration: none;
+			color: #fdfbe4;
+		}
+		#hambUL a:hover{
+			text-decoration: none;
+			color: #dbb209;
+		}
+		#churchLogo{
+			position: fixed;
+			left: 0;
+			top: 0;
+			opacity: 20%;
+			width: 70%;
+		}
+		#wjwcLogo{
+			position: fixed;
+			right: 2%;
+			bottom: 2%;
+			opacity: 20%;
+			width: 20%;
+		}
+	</style>
+	<div class="navLeft">
+	  <a href="#"><img src="Materials/churchLogo_70px.png" style="width: 50px; height: 50px;"></a>
+	</div>
+	<div class="navRight">
+	  <button id="burgerBtn"><img src="Materials/burgerMenuRed_70px.png" style="width: 35px; height: 35px;"></button>
+	  <button id="closeBtn"><img src="Materials/closeBtnYellow.png"></button>
+	</div>
+	<div class="hambMenu">
+	  <img src="Materials/solidLogo_large.png" id="churchLogo">
+	  <ul id="hambUL">
+		<li><a href="#" >home</a></li>
+		<li><a href="#" >about us</a></li>
+		<li><a href="#" >our faith</a></li>
+		<li><a href="cocug\donate.html" >donate</a></li>
+		<li><a href="cocug\contact-us.html" >contact us</a></li>
+	  </ul> 
+	  <img src="Materials/WJWC.png" id="wjwcLogo">
+	</div>
+	
+</nav>
